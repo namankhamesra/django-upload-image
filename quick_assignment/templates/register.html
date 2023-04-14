@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <center>
+        <h3>Register yourself here</h3>
+        <br><br>
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label>Enter first name : </label></td>
+                        <td><input type="text" name="first_name" placeholder="Enter first name"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><label>Enter last name : </label></td>
+                        <td><input type="text" name="last_name" placeholder="Enter last name"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><label>Enter email : </label></td>
+                        <td><input type="email" name="email" placeholder="Enter email"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><label>Enter username : </label></td>
+                        <td><input type="text" name="username" placeholder="Enter username"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><label>Select Image</label></td>
+                        <td><input type="file" name="user_image"></td>
+                    </tr>
+                    <tr></tr>
+                </tbody>
+            </table>
+            <input type="submit" value="Submit" name="submit">
+        </form>
+    </center>
+</body>
+
+</html>
